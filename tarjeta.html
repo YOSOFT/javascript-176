@@ -15,19 +15,23 @@
     </style>
 </head>
 <body>
-    <button id="crearTarjeta"></button>
+    <button id="crearTarjeta">Crear Tarjeta</button>
     <div id="contenedor">
         <div  id="tarjeta" class="tarjeta"></div>
     </div>
 
     <script>
         var contenedor = document.getElementById('contenedor');
-        var boton = document.getElementById(crearTarjeta);
+        var boton = document.getElementById('crearTarjeta');
         boton.addEventListener('click', () => {
             console.log("Boton funcionando");
+            var tarjeta = document.createElement('div');
+            tarjeta.classList.add('tarjeta');
+            console.log(tarjeta);
+            contenedor.appendChild(tarjeta);
         });
 
-        var tarjeta = document.getElementById('tarjeta');
+        // var tarjeta = document.getElementById('tarjeta');
     </script>
 </body>
 </html>
