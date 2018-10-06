@@ -1,7 +1,10 @@
 var celular = {
     marca : "samsung",
     modelo: "Note",
-    encender: () => console.log("Encendiendo...")
+    encender: () => {
+        console.log("Encendiendo...");
+        return "Hola";
+    }
 }
 
 console.log(celular.marca);
