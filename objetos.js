@@ -1,11 +1,13 @@
 var celular = {
     marca : "samsung",
-    modelo: "Note"
+    modelo: "Note",
+    encender: () => console.log("Encendiendo...")
 }
 
 console.log(celular.marca);
 console.log(celular['modelo']);
+console.log(celular.encender());
 
-for (const key in celular) {
-    console.log(key)
+for (var x in celular) {
+    console.log(x, celular[x]);
 }
