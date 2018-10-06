@@ -15,6 +15,19 @@
     </style>
 </head>
 <body>
-    <div class="tarjeta"></div>
+    <button id="crearTarjeta"></button>
+    <div id="contenedor">
+        <div  id="tarjeta" class="tarjeta"></div>
+    </div>
+
+    <script>
+        var contenedor = document.getElementById('contenedor');
+        var boton = document.getElementById(crearTarjeta);
+        boton.addEventListener('click', () => {
+            console.log("Boton funcionando");
+        });
+
+        var tarjeta = document.getElementById('tarjeta');
+    </script>
 </body>
 </html>
